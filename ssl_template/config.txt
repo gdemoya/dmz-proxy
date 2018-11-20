@@ -1,0 +1,2 @@
+PASS_BASE64=flksjflkdsjlkfd   # Insert output from     echo -n "user:password" | base64
+BASE_URL=mydomain.com

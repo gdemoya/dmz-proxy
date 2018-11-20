@@ -1,6 +1,11 @@
-test url:
-http://localhost/lon02-tst-002-k01/elasticsearch/
+# dmz-proxy
 
-exec:
+Disable security tls + basic auth from web page locally
+
+## config
+create ssl folder with the configuration and the certificates
+you can see an example in the ssl_template
+
+## run
 docker build -t dmz-proxy .
-docker run -v ssl:/etc/nginx/ssl --network host dmz-proxy
+docker run -v $(pwd)/ssl:/etc/nginx/ssl --network host dmz-proxy
